@@ -1,3 +1,12 @@
+###build command###
+curl http://127.0.0.1:3002/blocks/tip/height
+curl http://127.0.0.1:3002/blocks/tip/hash
+
+cd frontend
+npm run dist
+ls -l /root/bitever-esplora/frontend/dist/index.html
+
+
 ###Root Base , Web Title , Ticker Change###
 
 cd ~/bitever-esplora
