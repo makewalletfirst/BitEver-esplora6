@@ -1,3 +1,11 @@
+##execute command###
+pip install fastapi uvicorn requests
+uvicorn proxy:app --host 0.0.0.0 --port 8888
+
+##pm2 execute command##
+pm2 start "python3 -m uvicorn proxy:app --host 0.0.0.0 --port 8888" --name "bitever-proxy"
+
+
 ###build command###
 curl http://127.0.0.1:3002/blocks/tip/height
 curl http://127.0.0.1:3002/blocks/tip/hash
